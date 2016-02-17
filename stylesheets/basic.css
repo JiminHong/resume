@@ -1,0 +1,15 @@
+html { 
+  background: url("../images/self_portrait.jpg") no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+h1{
+	font-family: "brandon-grotesque",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
