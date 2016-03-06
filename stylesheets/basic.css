@@ -1,5 +1,38 @@
+html{
+	background: url(../images/bg.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+header{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#name{
+	font-size: 4em;
+}
+
+#me{
+	float: left;
+}
+
+p{
+	margin: 0;
+}
+
+main{
+	clear: both;
+	margin: 0 auto;
+}
+
 h1{
-	font-family: "brandon-grotesque", sans-serif;
+	margin: 0;
+	font-family: "freight-big-pro",sans-serif;
 	font-style: normal;
 	font-weight: 300;
 }
@@ -11,4 +44,73 @@ a{
 
 a:hover{
 	color: grey;
+}
+
+.responsive-img{
+	width: 100%;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+
+@media only screen and (min-width: 900px) {
+	#me{
+		float: none;
+	}
+	main{
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px){
+	header{
+		width: 80%;
+		text-align: left;
+	}
+	#me{
+		float: left;
+	}
+	main{
+		width: 70%;
+	}
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px){
+	#me{
+		float: none;
+	}
+    header{
+    	width: 95%;
+    }
+    main{
+		width: 90%;
+	}
+    .col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
